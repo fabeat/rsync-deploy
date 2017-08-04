@@ -10,6 +10,8 @@ RUN apk add --no-cache \
 # Change default shell to bash (needed for conveniently adding an ssh key)
 RUN sed -i -e "s/bin\/ash/bin\/bash/" /etc/passwd
 
-COPY ssh-deactivate-key-checking /bin/ssh-deactivate-key-checking
+COPY ssh-deactivate-key-checking ssh-start-entrypoint /bin/
 
 ENV LC_ALL=en_US.UTF-8
+
+ENTRYPOINT ["ssh-start-entrypoint"]
