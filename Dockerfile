@@ -13,5 +13,3 @@ RUN sed -i -e "s/bin\/ash/bin\/bash/" /etc/passwd
 COPY ssh-deactivate-key-checking /bin/ssh-deactivate-key-checking
 
 ENV LC_ALL=en_US.UTF-8
-
-ENTRYPOINT eval $(ssh-agent -s)
