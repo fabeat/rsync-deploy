@@ -14,3 +14,4 @@ COPY bashrc /root/.bashrc
 COPY ssh-deactivate-key-checking /bin/ssh-deactivate-key-checking
 
 ENV LC_ALL=en_US.UTF-8
+ENV ENV="/root/.bashrc"
