@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-MAINTAINER Fabian Graßl "fabian.grassl@db-n.com"
+LABEL maintainer="fabian.grassl@db-n.com"
 
 RUN apk add --no-cache \
             bash \
