@@ -8,3 +8,4 @@ fi
 
 mkdir -p ~/.ssh
 echo $1>>~/.ssh/known_hosts
+chmod 600 ~/.ssh/known_hosts
